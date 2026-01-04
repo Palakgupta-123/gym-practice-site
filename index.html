@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Gym</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Power Gym</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#plans">Plans</a>
+    <a href="#trainer">Trainer</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Build Your Body Strong</h2>
+  <p>Train Hard. Stay Fit. Never Quit.</p>
+  <button onclick="joinNow()">Join Now</button>
+</section>
+
+<section id="plans" class="section">
+  <h2>Membership Plans</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Basic</h3>
+      <p>₹999 / month</p>
+    </div>
+    <div class="card">
+      <h3>Standard</h3>
+      <p>₹1999 / month</p>
+    </div>
+    <div class="card">
+      <h3>Premium</h3>
+      <p>₹2999 / month</p>
+    </div>
+  </div>
+</section>
+
+<section id="trainer" class="section dark">
+  <h2>Expert Trainer</h2>
+  <p>Certified trainers to guide your fitness journey</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form onsubmit="return submitForm()">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Power Gym</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
